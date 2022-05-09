@@ -23,7 +23,7 @@ public class ConfigLoader {
 	}
 	
 	public String getBaseURL() {
-		
+		//variable
 		String prop = properties.getProperty("baseUrl");
 		if (prop != null) {
 			return prop;

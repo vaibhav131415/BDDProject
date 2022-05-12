@@ -32,13 +32,25 @@ public class ConfigLoader {
 	
 	}
 	
-	public String getDriverPath() {
+	public String getChromeDriverPath() {
 		
-		String driverpath = properties.getProperty("driverPath");
-		if(driverpath != null) {
-			return driverpath;
+		String Chromedriverpath = properties.getProperty("ChromedriverPath");
+		if(Chromedriverpath != null) {
+			return Chromedriverpath;
 		}
-		else throw new RuntimeException("driverpath not found");
+		else throw new RuntimeException("Chromedriverpath not found");
+		
+		
+		
+	}
+	
+	public String getFireFoxDriverPath() {
+		
+		String FirefoxDriverpath = properties.getProperty("FireFoxdriverPath");
+		if(FirefoxDriverpath != null) {
+			return FirefoxDriverpath;
+		}
+		else throw new RuntimeException("Chromedriverpath not found");
 		
 		
 		

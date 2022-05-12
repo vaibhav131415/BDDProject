@@ -1,6 +1,6 @@
-Feature: Contact Us
+Feature: Add Product to the cart
 
-Scenario Outline: To verify is user is able to navigate to contact us page
+Scenario Outline: To verify is user is able to add product in the cart
 
 
 Given user is on the store page

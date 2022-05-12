@@ -61,6 +61,7 @@ public class OrderPlacement {
 
 	@And("user places an order")
 	public void user_places_an_order() throws InterruptedException {
+		Thread.sleep(3000);
 		new CheckoutPage(driver).PlaceOrderBtn();
 	   
 	}

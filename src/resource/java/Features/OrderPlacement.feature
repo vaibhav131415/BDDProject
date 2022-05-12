@@ -1,4 +1,4 @@
-Feature: Place and Order
+Feature: Order Placement
 
 Scenario: To verify if user is able to place an order successfully 
 

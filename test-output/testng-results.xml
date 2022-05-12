@@ -2,58 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-09T13:51:58 IST" name="Default suite" finished-at="2022-05-09T13:52:52 IST" duration-ms="53734">
+  <suite started-at="2022-05-12T13:07:08 IST" name="Default suite" finished-at="2022-05-12T13:08:09 IST" duration-ms="60982">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-05-09T13:51:58 IST" name="Default test" finished-at="2022-05-09T13:52:52 IST" duration-ms="53734">
+    <test started-at="2022-05-12T13:07:08 IST" name="Default test" finished-at="2022-05-12T13:08:09 IST" duration-ms="60982">
       <class name="StepDefinitions.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-09T13:51:59 IST" name="setUpClass" finished-at="2022-05-09T13:52:00 IST" duration-ms="1191" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-12T13:07:08 IST" name="setUpClass" finished-at="2022-05-12T13:07:09 IST" duration-ms="1725" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@43d3995f]]>
+                <![CDATA[org.testng.TestRunner@693f2c89]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-09T13:52:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-09T13:52:18 IST" duration-ms="18344" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-12T13:07:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T13:07:29 IST" duration-ms="19046" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To verify is user is able to navigate to contact us page"]]>
+                <![CDATA["To verify is user is able to add product in the cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Contact Us]"]]>
+                <![CDATA["Optional[Add Product to the cart]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-09T13:52:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-09T13:52:31 IST" duration-ms="12877" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-12T13:07:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T13:07:45 IST" duration-ms="16863" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To verify is user is able to navigate to contact us page"]]>
+                <![CDATA["To verify is user is able to add product in the cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Contact Us]"]]>
+                <![CDATA["Optional[Add Product to the cart]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-09T13:52:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-09T13:52:51 IST" duration-ms="19888" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-12T13:07:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T13:08:07 IST" duration-ms="21311" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,14 +62,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Place and Order]"]]>
+                <![CDATA["Optional[Order Placement]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-09T13:52:51 IST" name="tearDownClass" finished-at="2022-05-09T13:52:52 IST" duration-ms="1362" status="FAIL">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.RunnerTest@60099951]" started-at="2022-05-12T13:08:07 IST" name="tearDownClass" finished-at="2022-05-12T13:08:09 IST" duration-ms="1963" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>

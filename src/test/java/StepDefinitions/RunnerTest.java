@@ -14,9 +14,9 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/resource/java/Features/"},  
         glue = {"StepDefinitions"},
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        monochrome = true,
+        monochrome = true
        
-        publish = true
+        
         
         
 )

@@ -22,6 +22,8 @@ public class StorePage extends BasePage {
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("a[aria-label='Add “"+ ProductName +"” to your cart']")))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(addToCartLink)).click();
 	}
+	
+
 }
 
 

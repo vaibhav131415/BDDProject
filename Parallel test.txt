@@ -1,0 +1,113 @@
+@Parameters("browser")
+	@Before
+	public void setUp(Scenario scenario) throws MalformedURLException  {
+		
+      
+        SaucelabsConnection connection = new SaucelabsConnection();
+		
+        MutableCapabilities sauceOpts = new MutableCapabilities();
+
+		sauceOpts.setCapability("name", scenario.getName());
+		sauceOpts.setCapability("build", "Service Modernization");
+		sauceOpts.setCapability("username", connection.sauceUserName);
+		sauceOpts.setCapability("accessKey",connection.sauceAccessKey);
+
+		MutableCapabilities browserOptions = new MutableCapabilities();
+		
+		
+		
+		
+		if(ConfigLoader.property.get().getProperty("BrowserType").equalsIgnoreCase("chrome")) {
+	
+			browserOptions = new ChromeOptions();
+			browserOptions.setCapability("sauce:options", sauceOpts);
+			browserOptions.setCapability("browserName", "chrome");
+			browserOptions.setCapability("browserVersion", "latest");
+			browserOptions.setCapability("platformName", "Windows 10");
+			
+
+		}else if(ConfigLoader.property.get().getProperty("BrowserType").equalsIgnoreCase("firefox")) {
+			
+		
+			browserOptions = new FirefoxOptions();
+			browserOptions.setCapability("sauce:options", sauceOpts);
+			browserOptions.setCapability("browserName", "firefox");
+			browserOptions.setCapability("browserVersion", "latest");
+			browserOptions.setCapability("platformName", "Windows 10");
+			
+			
+		}
+
+      System.out.println(browserOptions.getBrowserName());
+		URL url = new URL(connection.sauceURL);
+		driver = new RemoteWebDriver(url, browserOptions);
+		context.driver = (RemoteWebDriver) driver;
+		String BrowserName = browserOptions.getBrowserName().toLowerCase();
+		scenario.log("BrowserName: "+BrowserName);
+	//	extenttest.assignCategory("BrowserName" + browserOptions.getBrowserName());
+		
+		 
+
+
+
+
+		driver.navigate().to(ConfigLoader.property.get().getProperty("baseUrl"));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//configloader.java file
+		public static ThreadLocal<Properties> property = new ThreadLocal<Properties>();
+	private static String configpath = "common/src/main/resources/Config.properties";
+	
+
+	
+	public static void initializePropertyfile()  {
+		Properties pr = new Properties();
+		try {
+			InputStream instm = new FileInputStream(configpath);
+			pr.load(instm);
+			property.set(pr);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	//configuration.properties file
+	baseUrl = https://smwebapp.azurewebsites.net/
+BrowserType =chrome
+
+//runnertest class
+	@Parameters("browserType")
+	@BeforeClass
+	public void beforeClass(@Optional String browser) {
+	
+		
+		ConfigLoader.initializePropertyfile();
+		
+		if(!browser.equals("value not found")) {
+		ConfigLoader.property.get().setProperty("BrowserType", browser);
+		}
+		
+		
+	
+		
+		
+		
+	}
+	
+	@AfterClass
+public void afterClass() {}
+		

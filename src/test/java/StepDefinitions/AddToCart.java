@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+
 import factory.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

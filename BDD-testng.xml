@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDDProject" parallel = "tests">
+	
+	<test name = "SM Test - chrome">
+	   <parameter name ="browser" value="chrome" />
+	   <classes>
+	      <class name = "StepDefinitions.RunnerTest"/>
+	   </classes>
+	
+	</test>
+
+  <test name = "SM Test - firefox">
+	  <parameter name = "browser" value="firefox" />
+	  <classes>
+	     <class name = "StepDefinitions.RunnerTest"/>
+	  </classes>
+	
+	</test>
+
+
+
+ 
+	
+	
+	
+	</suite>

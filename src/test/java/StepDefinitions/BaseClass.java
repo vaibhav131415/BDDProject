@@ -1,9 +1,10 @@
 package StepDefinitions;
 
-import java.time.Duration;
 
+
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import Constants.UrlEndpoints;
 
@@ -35,7 +36,7 @@ public class BaseClass {
     	System.out.println("Before : Thread ID : "+ Thread.currentThread().getId() +
     			" Scenario Name : "+ scenario.getName());
        
-            driver = DriverFactory.initializeDriver(System.getProperty("browser","chrome"));
+            driver = DriverFactory.initializeDriver("firefox");	
             
             new StorePage(driver).load(UrlEndpoints.STORE);
         }
@@ -49,7 +50,7 @@ public class BaseClass {
 //    scenario.log("browser name: "+browserName);
     
 
-  
+ 
     
  
 

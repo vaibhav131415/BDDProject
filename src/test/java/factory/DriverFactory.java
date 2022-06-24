@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import io.appium.java_client.gecko.GeckoDriver;
+
 import utils.ConfigLoader;
 
 public class DriverFactory {
